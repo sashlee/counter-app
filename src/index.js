@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM  from "react-dom";
 import Counter from "./app";
 import 'antd/dist/antd.css';
+import Timer from './timer';
 import { Layout, Breadcrumb, Button } from "antd";
 
 const {Content} = Layout;
@@ -34,7 +35,9 @@ class App extends React.Component{
             <div style={{ marginTop: 20 }}  >
                 {this.state.mount ? <Counter/> : null } 
             </div>
-               
+            <div style={{ marginTop: 20 }}  >
+                 <Timer/> 
+            </div>               
           </div>
         </Content>
     </Layout>
